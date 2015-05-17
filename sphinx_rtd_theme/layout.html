@@ -11,6 +11,9 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
+  {% if theme_force_ie_mode %}
+    <meta http-equiv="X-UA-Compatible" content="IE={{ theme_force_ie_mode }}">
+  {% endif %}
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
